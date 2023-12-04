@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <style>
+      </style>
+      <title>Bootstrap Custom Layout</title>
+    </head>
+    <body>
+    <div class="container custom-container">
+        <!-- Header -->
+        <header class="d-flex align-items-center py-2 gap-3">
+            <!-- Logo Container -->
+            <div class="logo-container ">
+                <a href="#">
+                    <img src="images/logo.svg" style="width: 220px; " class="logo" alt="Enko">
+                </a>
+            </div>
+
+            <div class="menu-parent-container d-flex flex-column w-100">
+                <!-- Menu and Contact Container -->
+                <div class="menu-contact-container d-flex align-items-center justify-content-between" style="max-width: 790px">
+                    <!-- Menu Items -->
+                    <div class="menu-items gap-4 d-flex">
+                        <a href="#" class="btn menu-item rounded-5 p-1 text-decoration-none fw-bold fs-6 text-black">Доставка і оплата</a>
+                        <a href="#" class="btn menu-item rounded-5 p-1 text-decoration-none fw-bold fs-6 text-black">Гарантія</a>
+                        <a href="#" class="btn menu-item rounded-5 p-1 text-decoration-none fw-bold fs-6 text-black">Контакти</a>
+                    </div>
+
+                    <!-- Phone and Language Buttons -->
+                    <div class="phone-language-container ml-auto d-flex align-items-center gap-2">
+                        <!-- Phone Button -->
+                        <a href="#" class="btn menu-item rounded-5 p-2 d-flex my-fs-15 align-items-center fw-bold" style="height: 29px; white-space: nowrap;">0 800 331-332</a>
+                        <a href="#" class="btn menu-item rounded-5 p-2 d-flex my-fs-15 align-items-center fw-bold chosen-one" style="height: 29px">UA</a>
+                        <a href="#" class="btn menu-item rounded-5 p-2 d-flex my-fs-15 align-items-center fw-bold" style="height: 29px">EN</a>
+                    </div>
+                </div>
+
+                <!-- Searching bar Container -->
+                <div class="d-flex flex-row gap-5">
+                    <div class="input-group bg-white w-50">
+                        <input type="text" class="form-control border-0" placeholder="Пошук товару">
+                        <button class="btn" type="button">
+                            <i class="bi bi-search"></i>
+                        </button>
+                    </div>
+
+                    <div class="d-flex align-items-center fs-5 fw-bold">
+                        У кошику товарів: <span class="ps-lg-1" style="color: rgb(53, 175, 18)">0</span>
+                    </div>
+                </div>
+
+            </div>
+        </header>
+
+        <!-- Main content -->
+        <div class="d-flex flex-row gap-1">
+
+            <div class="col-md-3 d-flex flex-column align-items-start custom-sidebar">
+                <div class="bg-white">
+                    <!-- 1 -->
+                    <a class="btn" data-bs-toggle="collapse" href="#collapse1" role="button" aria-expanded="false" aria-controls="collapse1">
+                        Для наших захисників
+                    </a>
+                    <ul class="collapse" id="collapse1">
+                        <li>Засоби для знезараження води</li>
+                        <li>Ножиці тактичні</li>
+                        <li>Ноші</li>
+                        <li>Одноразовий душ</li>
+                        <li>Одяг, екіпірування</li>
+                        <li>Підсумки</li>
+                        <li>Прапори</li>
+                        <li>Ремені для зброї</li>
+                        <li>Рюкзаки тактичні, баули</li>
+                        <li>Сумки для аптечки</li>
+                        <li>Тактичні лопати</li>
+                        <li>Тактичні сумки</li>
+                        <li>Термоковдри</li>
+                        <li>Турнікети медичні</li>
+                    </ul>
+                    <!-- 2 -->
+                    <a class="btn" data-bs-toggle="collapse" href="#collapse2" role="button" aria-expanded="false" aria-controls="collapse2">
+                        Електротранспорт
+                    </a>
+                    <ul class="collapse" id="collapse2">
+                        <li>Гіроборди</li>
+                        <li>Гіроскутери</li>
+                        <li>Електровелосипеди</li>
+                        <li>Електросамокати</li>
+                        <li>Електроскутери</li>
+                        <li>Моноколеса</li>
+                    </ul>
+                    <!-- 3 -->
+                    <a class="btn" data-bs-toggle="collapse" href="#collapse3" role="button" aria-expanded="false" aria-controls="collapse3">
+                        Комп'ютери, моноблоки
+                    </a>
+                    <ul class="collapse" id="collapse3">
+                        <li>Моноблоки</li>
+                        <li>Персональні комп'ютери</li>
+                    </ul>
+                    <!-- 4 -->
+                    <div class="w-100">
+                        <a class="btn" data-bs-toggle="collapse" href="#collapse4" role="button" aria-expanded="false" aria-controls="collapse4">
+                            Посуд
+                        </a>
+                        <ul class="collapse" id="collapse4">
+                            <li>Вінчики</li>
+                            <li>Кришки для посуду</li>
+                            <li>Миски</li>
+                            <li>Млинки для спецій</li>
+                            <li>Набори для спецій</li>
+                            <li>Набори посуду</li>
+                            <li>Винні набори</li>
+                            <li>Глечики</li>
+                            <li>Ємності для сипучих продуктів</li>
+                            <li>Каструлі</li>
+                            <li>Ковші</li>
+                            <li>Кухонне приладдя</li>
+                            <li>Кухонні ножі, ножиці і набори</li>
+                            <li>Посуд для приготування чаю і кави</li>
+                            <li>Сотейники</li>
+                            <li>Сковорідки</li>
+                            <li>Столові прибори, набори</li>
+                            <li>Форми для випікання</li>
+                            <li>Харчові контейнери</li>
+                            <li>Штопори</li>
+                        </ul>
+                    </div>
+
+
+                    <!-- 5 -->
+                    <a class="btn" data-bs-toggle="collapse" href="#collapse5" role="button" aria-expanded="false" aria-controls="collapse5">
+                        Товари для свят, подарунки
+
+                    </a>
+                    <ul class="collapse" id="collapse5">
+                        <li>Іграшки</li>
+                        <li>Антистреси</li>
+                        <li>Головоломки</li>
+                        <li>Гральні карти</li>
+                        <li>Конструктори</li>
+                        <li>Настільні ігри</li>
+                        <li>Новорічний декор</li>
+                        <li>Піни</li>
+                        <li>Пазли</li>
+                        <li>Статуетки</li>
+                        <li>Фігурки</li>
+                        <li>Хобі та творчість</li>
+                    </ul>
+
+                    <!-- 6 -->
+                    <a class="btn" data-bs-toggle="collapse" href="#collapse6" role="button" aria-expanded="false" aria-controls="collapse6">
+                        Побутова техніка
+                    </a>
+                    <ul class="collapse" id="collapse6">
+                        <li>Аксесуари для побутової техніки</li>
+                        <li>Догляд за собою</li>
+                        <li>Медичні товари</li>
+                        <li>Техніка для дому</li>
+                        <li>Техніка для кухні</li>
+                    </ul>
+
+                    <!-- 7 -->
+                    <a class="btn" data-bs-toggle="collapse" href="#collapse7" role="button" aria-expanded="false" aria-controls="collapse7">
+                        Ноутбуки та планшети
+                    </a>
+                    <ul class="collapse" id="collapse7">
+                        <li>Ноутбуки</li>
+                        <li>Планшети</li>
+                        <li>Електронні книги</li>
+                    </ul>
+
+                    <!-- 8 -->
+                    <a class="btn" data-bs-toggle="collapse" href="#collapse8" role="button" aria-expanded="false" aria-controls="collapse8">
+                        Комплектуючі ПК
+                    </a>
+                    <ul class="collapse" id="collapse8">
+                        <li>Блоки живлення</li>
+                        <li>Відеокарти</li>
+                        <li>Для майнінгу</li>
+                        <li>Жорсткі диски та SSD</li>
+                        <li>Звукові плати</li>
+                        <li>Картридери</li>
+                        <li>Контролери, конвертори</li>
+                        <li>Корпуси</li>
+                        <li>Материнські плати</li>
+                        <li>Моддінг</li>
+                        <li>Оперативна пам'ять</li>
+                        <li>Оптичні приводи</li>
+                        <li>Процесори</li>
+                        <li>Серверне обладнання</li>
+                        <li>Системи охолодження</li>
+                    </ul>
+
+                    <!-- 9 -->
+                    <a class="btn" data-bs-toggle="collapse" href="#collapse9" role="button" aria-expanded="false" aria-controls="collapse9">
+                        Комп'ютерна периферія
+                    </a>
+                    <ul class="collapse" id="collapse9">
+
+                        <li>3D друк</li>
+                        <li>Ігрові крісла</li>
+                        <li>Ігрові маніпулятори та акс.</li>
+                        <li>Адаптери, Bluetooth</li>
+                        <li>Веб-камери</li>
+                        <li>Графічні планшети та акс.</li>
+                        <li>Кабелі, перехідники</li>
+                        <li>Килимки</li>
+                        <li>Клавіатури
+                        <li>Комп'ютерні аксесуари</li>
+                        <li>Комплекти (клав.+миша)</li>
+                        <li>Концентратори (HUB)</li>
+                        <li>Мікрофони</li>
+                        <li>Мишки</li>
+                        <li>Монітори</li>
+                        <li>Обробка документів</li>
+                        <li>Принтери, БФП, Сканери</li>
+                    </ul>
+
+                    <!-- 10 -->
+                    <a class="btn" data-bs-toggle="collapse" href="#collapse10" role="button" aria-expanded="false" aria-controls="collapse10">
+                        ТВ, Аудіо, Відео, Фото
+                    </a>
+                    <ul class="collapse" id="collapse10">
+                        <li>ТВ-техніка</li>
+                        <li>Аудіотехніка</li>
+                        <li>Відеотехніка</li>
+                        <li>Фототехніка</li>
+                        <li>Проекційне обладнання</li>
+                        <li>Супутникове обладнання</li>
+                    </ul>
+
+                    <!-- 11 -->
+                    <div class="w-100">
+                        <a class="btn" data-bs-toggle="collapse" href="#collapse11" role="button" aria-expanded="false" aria-controls="collapse11">
+                            Телефонія
+                        </a>
+                        <ul class="collapse" id="collapse11">
+                            <li>Мобільні телефони</li>
+                            <li>Аксесуари для моб. тел.</li>
+                            <li>Смарт-годинник</li>
+                            <li>Фітнес-браслети</li>
+                            <li>VOIP обладнання</li>
+                            <li>Телефони, факси, міні-АТС</li>
+                            <li>Рації, радіостанції</li>
+                        </ul>
+                    </div>
+
+                    <!-- 12 -->
+                    <a class="btn" data-bs-toggle="collapse" href="#collapse12" role="button" aria-expanded="false" aria-controls="collapse12">
+                        Мережеве обладнання
+                    </a>
+                    <ul class="collapse" id="collapse12">
+                        <li>GSM/3G/4G обладнання</li>
+                        <li>KVM обладнання</li>
+                        <li>Powerline обладнання</li>
+                        <li>Wi-Fi обладнання</li>
+                        <li>Інструменти</li>
+                        <li>Аксесуари для комутаторів</li>
+                        <li>Кабельна продукція</li>
+                        <li>Комутатори</li>
+                        <li>Маршрутизатори</li>
+                        <li>Мережеві карти та адаптери</li>
+                        <li>Мережеві сховища (NAS)</li>
+                        <li>Модеми</li>
+                        <li>Принт-сервери</li>
+                        <li>Серверні шафи та акс.</li>
+                        <li>Фаєрволи</li>
+                    </ul>
+
+                    <!-- 13 -->
+                    <a class="btn" data-bs-toggle="collapse" href="#collapse13" role="button" aria-expanded="false" aria-controls="collapse13">
+                        Пристрої живлення
+                    </a>
+                    <ul class="collapse" id="collapse13">
+                        <li>Інвертори</li>
+                        <li>Аксесуари для ДБЖ</li>
+                        <li>Акумулятори</li>
+                        <li>Батареї LiFePo4</li>
+                        <li>Батареї для ДБЖ</li>
+                        <li>Батарейки</li>
+                        <li>ДБЖ</li>
+                        <li>Зарядні пристрої для акумуляторів</li>
+                        <li>Зарядні станції</li>
+                        <li>Мережеві подовжувачі</li>
+                        <li>Портативні зарядні</li>
+                        <li>Стабілізатори</li>
+                        <li>Фільтри мережі</li>
+                    </ul>
+
+                    <!-- 14 -->
+                    <div class="w-100">
+                        <a class="btn" data-bs-toggle="collapse" href="#collapse14" role="button" aria-expanded="false" aria-controls="collapse14">
+                            Флеш-пам'ять
+                        </a>
+                        <ul class="collapse" id="collapse14">
+                            <li>CompactFlash (CF)</li>
+                            <li>JetDrive</li>
+                            <li>USB Flash накопичувачі</li>
+                            <li>Карти пам'яті (SDHC, microSDHC)</li>
+                        </ul>
+                    </div>
+
+                    <!-- 15 -->
+                    <a class="btn" data-bs-toggle="collapse" href="#collapse15" role="button" aria-expanded="false" aria-controls="collapse15">
+                        Товари для автомобіля
+                    </a>
+                    <ul class="collapse" id="collapse15">
+                        <li>FM трансмітери</li>
+                        <li>Інвертори</li>
+                        <li>Автоелектроніка</li>
+                        <li>Автокрісла</li>
+                        <li>Автолампи</li>
+                        <li>Автомобільні свічки</li>
+                        <li>Акумулятори</li>
+                        <li>Акустика для авто</li>
+                        <li>Ароматизатори та освіжувачі повітря</li>
+                        <li>Відеореєстратори та акс.</li>
+                        <li>Зарядні пристрої для акумуляторів</li>
+                        <li>Зарядні станції та акс. для електромобілів</li>
+                        <li>Килимки в багажник</li>
+                        <li>Килимки в салон</li>
+                        <li>Компресори</li>
+                        <li>Магнітоли</li>
+                        <li>Мийки високого тиску та акс.</li>
+                        <li>Модулі GPS</li>
+                        <li>Навігатори GPS</li>
+                        <li>Олії та автохімія</li>
+                        <li>Різне</li>
+                        <li>Рамки номерного знаку</li>
+                        <li>Сигналізація</li>
+                        <li>Склоочисники</li>
+                        <li>Техдопомога</li>
+                        <li>Трекери GPS</li>
+                        <li>Фільтри автомобільні</li>
+                        <li>Холодильники</li>
+                        <li>Шкребки та щітки дла авто</li>
+                    </ul>
+
+                    <!-- 16 -->
+                    <a class="btn" data-bs-toggle="collapse" href="#collapse16" role="button" aria-expanded="false" aria-controls="collapse16">
+                        Витратні матеріали
+                    </a>
+                    <ul class="collapse" id="collapse16">
+                        <li>Диски, дискети, бокси</li>
+                        <li>ЗІП для лазерних пристроїв</li>
+                        <li>Картриджі для копірів</li>
+                        <li>Картриджі для лазерних</li>
+                        <li>Картриджі для матричних</li>
+                        <li>Картриджі для струменевих</li>
+                        <li>Обкладинки, пружини</li>
+                        <li>Папір офісний</li>
+                        <li>Плівка для друку</li>
+                        <li>Плівка для ламінації</li>
+                        <li>СБПЧ, НПК</li>
+                        <li>Стрічка</li>
+                        <li>Технологічні матеріали</li>
+                        <li>Тонер</li>
+                        <li>Фотопапір</li>
+                        <li>Чистячі засоби</li>
+                        <li>Чорнило</li>
+                    </ul>
+
+                    <!-- 17 -->
+                    <a class="btn" data-bs-toggle="collapse" href="#collapse17" role="button" aria-expanded="false" aria-controls="collapse17">
+                        Програмне забезпечення
+                    </a>
+                    <ul class="collapse" id="collapse17">
+                        <li>Інше ПЗ</li>
+                        <li>Антивіруси</li>
+                        <li>Комп'ютерні ігри</li>
+                        <li>Операційні системи</li>
+                        <li>Офісні програми</li>
+                        <li>ПЗ для мультимедіа</li>
+                        <li>ПЗ для роботи з WEB</li>
+                        <li>ПЗ для роботи з текстом</li>
+                        <li>ПЗ для серверів</li>
+                    </ul>
+
+                    <!-- 18 -->
+                    <a class="btn" data-bs-toggle="collapse" href="#collapse18" role="button" aria-expanded="false" aria-controls="collapse18">
+                        Гаджети HI-TECH
+                    </a>
+                    <ul class="collapse" id="collapse18">
+                        <li>3D листівки</li>
+                        <li>Ігри віртуальної реальності</li>
+                        <li>Аксесуари до дронів</li>
+                        <li>Гексакоптери</li>
+                        <li>Електронні сигарети (вейпінг)</li>
+                        <li>Квадрокоптери</li>
+                        <li>Окуляри віртуальної реальності</li>
+                        <li>Пістолети вірт. реальності</li>
+                    </ul>
+
+                    <!-- 20 -->
+                    <a class="btn" data-bs-toggle="collapse" href="#collapse20" role="button" aria-expanded="false" aria-controls="collapse20">
+                        Торгове обладнання
+                    </a>
+                    <ul class="collapse" id="collapse20">
+                        <li>POS-монітори</li>
+                        <li>POS-термінали</li>
+                        <li>Індикатори покупця</li>
+                        <li>Аксесуари до торг. обладнання</li>
+                        <li>Грошові скриньки</li>
+                        <li>Детектори валют</li>
+                        <li>Етикет-пістолети</li>
+                        <li>Етикет-стрічки</li>
+                        <li>Етикетки самоклеючі</li>
+                        <li>Зчитувачі магнітних карт</li>
+                        <li>Калькулятори</li>
+                        <li>Касові апарати</li>
+                        <li>Касова стрічка</li>
+                        <li>Лічильники банкнот</li>
+                        <li>Принтери етикеток</li>
+                        <li>Принтери чеків</li>
+                        <li>Ріббони</li>
+                        <li>Сканери штрих-кодів</li>
+                        <li>Термінали збору даних</li>
+                        <li>Торгові ваги</li>
+                        <li>Фіскальні реєстратори</li>
+                    </ul>
+
+                    <!-- 21 -->
+                    <a class="btn" data-bs-toggle="collapse" href="#collapse21" role="button" aria-expanded="false" aria-controls="collapse21">
+                        Сантехніка та меблі
+                    </a>
+                    <ul class="collapse" id="collapse21">
+                        <li>Ігрові столи</li>
+                        <li>Дитячі меблі</li>
+                        <li>Меблі для ванної</li>
+                        <li>Меблі для дому та кухні</li>
+                        <li>Офісні меблі</li>
+                        <li>Сантехніка</li>
+                        <li>Системи та фільтри для води</li>
+                        <li>Тепла підлога</li>
+                    </ul>
+
+                    <!-- 22 -->
+                    <a class="btn" data-bs-toggle="collapse" href="#collapse22" role="button" aria-expanded="false" aria-controls="collapse22">
+                        Розумний будинок та безпека
+                    </a>
+                    <ul class="collapse" id="collapse22">
+                        <li>Розумний дім</li>
+                        <li>Системи охорони</li>
+                        <li>Відеоспостереження</li>
+                    </ul>
+
+                    <!-- 23 -->
+                    <a class="btn" data-bs-toggle="collapse" href="#collapse23" role="button" aria-expanded="false" aria-controls="collapse23">
+                        Одяг, взуття та аксесуари
+                    </a>
+                    <ul class="collapse" id="collapse23">
+                        <li>Аксесуари</li>
+                        <li>Одяг</li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="col-md-9 custom-main d-flex flex-column gap-2">
+                <img src="images/instmin.png" alt="inst" width="100%">
+                <div id="carouselExampleIndicators" class="carousel slide">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="images/1.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/2.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/3.png" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+
+                <div style="background-color: #ffffff;" class="d-flex flex-column">
+                    <div class="card-section d-flex flex-row justify-content-between m-3">
+                        <div class="card" style="width: 14rem; border: none">
+                            <img src="images/powerbank.jpg" class="card-img-top" alt="powerbank">
+                            <div class="card-body d-flex align-items-center flex-column justify-content-between">
+                                <a href="#" class="card-title">Батарея універсальна Baseus Adaman Metal 20000mAh 65W, Black, 2xUSB 12V/5A (PPIMDA-D01/PPADM-65S)</a>
+                                <p class="card-text fw-bold fs-3">2030₴</p>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 14rem; border: none">
+                            <img src="images/generator.jpg" class="card-img-top" alt="generator">
+                            <div class="card-body d-flex align-items-center flex-column justify-content-between">
+                                <a href="#" class="card-title">Генератор бензиновий Kuyia TM950</a>
+                                <p class="card-text fw-bold fs-3">5013₴</p>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 14rem; border: none">
+                            <img src="images/station.jpg" class="card-img-top" alt="station">
+                            <div class="card-body d-flex align-items-center flex-column justify-content-between">
+                                <a href="#" class="card-title">Зарядна станція Anker 757 PowerHouse 1229Wh</a>
+                                <p class="card-text fw-bold fs-3">35999₴</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-section d-flex flex-row justify-content-between m-3">
+                        <div class="card" style="width: 14rem; border: none">
+                            <img src="images/lego.jpg" class="card-img-top" alt="lego">
+                            <div class="card-body d-flex align-items-center flex-column justify-content-between">
+                                <a href="#" class="card-title">Конструктор LEGO City Вуличний скейтпарк 454 деталей (60364)</a>
+                                <p class="card-text fw-bold fs-3">1694₴</p>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 14rem; border: none">
+                            <img src="images/case.jpg" class="card-img-top" alt="case">
+                            <div class="card-body d-flex align-items-center flex-column justify-content-between">
+                                <a href="#" class="card-title">Корпус JONSBO D31 MESH Black</a>
+                                <p class="card-text fw-bold fs-3">1986₴</p>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 14rem; border: none">
+                            <img src="images/mouse.jpg" class="card-img-top" alt="mouse">
+                            <div class="card-body d-flex align-items-center flex-column justify-content-between">
+                                <a href="#" class="card-title">Мишка Logitech G300S (910-004345)</a>
+                                <p class="card-text fw-bold fs-3">879₴</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-section d-flex flex-row justify-content-between m-3">
+                        <div class="card" style="width: 14rem; border: none">
+                            <img src="images/tefal.jpg" class="card-img-top" alt="tefal">
+                            <div class="card-body d-flex align-items-center flex-column justify-content-between">
+                                <a href="#" class="card-title">Набір ножів Tefal Ice Force K232S574</a>
+                                <p class="card-text fw-bold fs-3">2818₴</p>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 14rem; border: none">
+                            <img src="images/ssd.jpg" class="card-img-top" alt="case">
+                            <div class="card-body d-flex align-items-center flex-column justify-content-between">
+                                <a href="#" class="card-title">Накопичувач SSD M.2 2280 1TB Samsung (MZ-V8V1T0BW)</a>
+                                <p class="card-text fw-bold fs-3">2613₴</p>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 14rem; border: none">
+                            <img src="images/om.jpg" class="card-img-top" alt="mouse">
+                            <div class="card-body d-flex align-items-center flex-column justify-content-between">
+                                <a href="#" class="card-title">Омивач автомобільний Rondex (-20) 5 л з ароматом дині</a>
+                                <p class="card-text fw-bold fs-3">196₴</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-section d-flex flex-row justify-content-between m-3">
+                        <div class="card" style="width: 14rem; border: none">
+                            <img src="images/cpu.jpg" class="card-img-top" alt="cpu">
+                            <div class="card-body d-flex align-items-center flex-column justify-content-between">
+                                <a href="#" class="card-title">Процесор AMD Ryzen 5 5600X (100-100000065BOX)</a>
+                                <p class="card-text fw-bold fs-3">6441₴ </p>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 14rem; border: none">
+                            <img src="images/pan.jpg" class="card-img-top" alt="pan">
+                            <div class="card-body d-flex align-items-center flex-column justify-content-between">
+                                <a href="#" class="card-title">Сковорода Ringel Pepperoni 28 см (RG-1146-28)</a>
+                                <p class="card-text fw-bold fs-3">2613₴</p>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 14rem; border: none">
+                            <img src="images/tv.jpg" class="card-img-top" alt="mouse">
+                            <div class="card-body d-flex align-items-center flex-column justify-content-between">
+                                <a href="#" class="card-title">Телевізор Samsung UE43CU8000UXUA</a>
+                                <p class="card-text fw-bold fs-3">18058₴</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-section d-flex flex-row justify-content-between m-3">
+                        <div class="card" style="width: 14rem; border: none">
+                            <img src="images/tv2.jpg" class="card-img-top" alt="tv2">
+                            <div class="card-body d-flex align-items-center flex-column justify-content-between">
+                                <a href="#" class="card-title">Телевізор Xiaomi TV A2 43</a>
+                                <p class="card-text fw-bold fs-3">14999₴</p>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 14rem; border: none">
+                            <img src="images/teplo.jpg" class="card-img-top" alt="teplo">
+                            <div class="card-body d-flex align-items-center flex-column justify-content-between">
+                                <a href="#" class="card-title">Тепловізійний приціл AGM Taipan TM25-384</a>
+                                <p class="card-text fw-bold fs-3">59216₴</p>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 14rem; border: none">
+                            <img src="images/shkr.jpg" class="card-img-top" alt="shkr">
+                            <div class="card-body d-flex align-items-center flex-column justify-content-between">
+                                <a href="#" class="card-title">Шкребок автомобільний Lavita Шкребок пластиковий (250327)</a>
+                                <p class="card-text fw-bold fs-3">47₴</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white ">
+                    <div class="fw-bold d-flex align-items-center justify-content-center mt-3 pre-footer-header-text fs-6">
+                        Enko - Інтернет-магазин техніки
+                    </div>
+                    <div class="d-flex align-items-center justify-content-center text-center mx-4 my-2">
+                        Це більше 100000 товарів в наявності і під замовлення: Комп'ютери, комплектуючі, ноутбуки, мобільні та стаціонарні телефони, фотоапарати, офісна техніка (принтери, МФУ, сканери), побутова техніка, кондиціонери, інструмент, автомобільна електроніка, а також великий асортимент аксесуарів. Всю продукцію ви можете придбати за найнижчими цінами зі складу.
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <footer class="my-footer">
+        <div class="p-2 text-white">
+            <span>(c) 2012-2023 -</span><a href="#" class="footer-link">Інтернет-магазин Enko</a>
+        </div>
+    </footer>
+    <script src="bootstrap.bundle.js"></script>
+    </body>
+    </html>
